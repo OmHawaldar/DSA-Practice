@@ -52,7 +52,6 @@ class Main {
     public static void main(String[] args) {
         int []arr={9,4,7,6,3,1,5};
         int n=arr.length,low=0,high=n-1;
-        
        mergesort(arr,low,high);
        System.out.print(Arrays.toString(arr));
          
