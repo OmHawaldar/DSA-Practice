@@ -34,8 +34,6 @@ class Main {
         for(int i=low;i<=high;i++){
             arr[i]=temp.get(i-low);
         }
-        
-        
     }
     
      public static void mergesort(int[]arr,int low,int high){
