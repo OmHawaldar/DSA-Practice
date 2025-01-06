@@ -1,4 +1,6 @@
 
+/* Divide and merge technique, first the mergesort function divides the array recursively then the merge function sorts and merge the array 
+  dont make mistakes in indexes, dividing calculating middle index and conditons in mergersort function*/
 
 import java.util.*;
 class Main {
