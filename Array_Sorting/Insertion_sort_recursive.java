@@ -24,4 +24,4 @@ class Main {
         
     }
 }
-
+//Easy to understand just walkthrough once
