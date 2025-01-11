@@ -25,3 +25,31 @@ class Main {
 
     }
 }
+
+// Approach 2, first sort the array then comapre it's neighbour elements to check duplicate
+
+
+import java.util.*;
+
+class Main {
+    
+    public static boolean dup(int[]arr){
+        int n=arr.length;
+        Arrays.sort(arr);
+        
+        for(int i=1;i<n;i++){
+            if(arr[i-1]==arr[i]){
+               return true;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        
+        int []arr={1,2,5,6,2};
+        
+        boolean res=dup(arr);
+        System.out.print(res);
+       
+    }
+}
