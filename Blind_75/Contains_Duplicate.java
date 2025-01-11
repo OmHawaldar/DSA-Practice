@@ -1,5 +1,4 @@
 // # check if a value appears atleast twice
-
 // Approach 1, simple two loops
 
 class Main {
@@ -25,6 +24,10 @@ class Main {
 
     }
 }
+
+
+********************************************************************************************************************************************************************************************************
+
 
 // Approach 2, first sort the array then comapre it's neighbour elements to check duplicate
 
@@ -55,6 +58,14 @@ class Main {
 }
 
 
+********************************************************************************************************************************************************************************************************
+
+
+
+// Approach 3 Using HashSet, HashSet does not accept duplicate values we can use this to check for duplicates
+//     easy to understand
+
+
 import java.util.*;
 
 class Main {
@@ -62,22 +73,16 @@ class Main {
     public static boolean dup(int[]arr){
         int n=arr.length;
         HashSet <Integer> set=new HashSet<>();
-        
-        
         for(int i=0;i<n;i++){
             set.add(arr[i]);
         }
-        
         if(set.size()<n){
         return true;
     }
-    
     return false;
     }
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {   
         int []arr={1,2,5,6};
-        
         boolean res=dup(arr);
         System.out.print(res);
        
