@@ -53,3 +53,33 @@ class Main {
        
     }
 }
+
+
+import java.util.*;
+
+class Main {
+    
+    public static boolean dup(int[]arr){
+        int n=arr.length;
+        HashSet <Integer> set=new HashSet<>();
+        
+        
+        for(int i=0;i<n;i++){
+            set.add(arr[i]);
+        }
+        
+        if(set.size()<n){
+        return true;
+    }
+    
+    return false;
+    }
+    public static void main(String[] args) {
+        
+        int []arr={1,2,5,6};
+        
+        boolean res=dup(arr);
+        System.out.print(res);
+       
+    }
+}
