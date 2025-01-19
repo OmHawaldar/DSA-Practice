@@ -23,3 +23,38 @@ System.out.print(msum);
 
     }
 }
+
+
+*********************************************************************************************************************************************
+    
+class Solution {
+    public int maxSubArray(int[] nums) {
+
+        int n= nums.length;
+        int mx=Integer.MIN_VALUE;
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                int val=0;
+                for(int k=i;k<=j;k++){
+                    val += nums[k];
+                }
+
+              mx=Math.max(val,mx);
+            }
+        }
+        return mx;
+
+        
+    }
+}
+
+
+*************************************************************************************************************************************************
+
+
+
+Both are Brute force Approach, not suitable for varying and large test cases, optimal solution is given in Blind_75
+
+
+
+    
