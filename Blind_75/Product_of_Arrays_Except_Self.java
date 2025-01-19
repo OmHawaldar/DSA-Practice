@@ -1,21 +1,25 @@
-import java.util.*;
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int n=nums.length;
+        int[] pf=new int[n];
+        int[] sf=new int[n];
+        pf[0]=1;
+        sf[n-1]=1;
 
-class Main {
-    public static void main(String[] args) {
-        int[] arr={1,2,3,4};
-        int n=arr.length;
-        int[] te = new int[n];
-        int i=0,j=0;
-        while(n>0){
-            int m=arr[i]
-            te[i]=m;
-            i++;
-            n--;
+        for(int i=1;i<n;i++){
+            pf[i]=pf[i-1]*nums[i-1];
         }
-       System.out.print(Arrays.toString(te));
-      
-        
-          }
-}
 
-// Still solving 
+        for(int i=n-2;i>=0;i--){
+            sf[i]=sf[i+1]*nums[i+1];
+        }
+
+
+        int[] fin=new int[n];
+        for(int i=0;i<n;i++){
+            fin[i]=pf[i]*sf[i];
+        }
+        return fin;
+
+    }
+}
