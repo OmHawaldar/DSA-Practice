@@ -76,8 +76,9 @@ class Main {
         for(int i=0;i<n;i++){
             set.add(arr[i]);
         }
-        if(set.size()<n){
-        return true;
+        if(set.size()<n){                                             **********************************
+                                                                        3rd APPROACH USING HASHSET
+        return true;                                                  ************************************
     }
     return false;
     }
