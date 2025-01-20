@@ -6,9 +6,9 @@ class Solution {
        int val=0;
         for(int i=0;i<n;i++){
             val+=nums[i];
-
-            if(val>mx){
-                mx=val;
+                                                    *****************************
+            if(val>mx){                                    OPTIMAL SOLUTION
+                mx=val;                             *****************************
             }
 
             if(val<0){
