@@ -54,7 +54,10 @@ class Main {
         int n=arr.length;
         int p1=arr[0],p2=arr[0],res=arr[0];
         for(int i=1;i<n;i++){
-         p1=Math.max(arr[i],Math.max(p1*arr[i],p2*arr[i]));
+         int temp =Math.max(arr[i],Math.max(p1*arr[i],p2*arr[i]));
+         p2=Math.min(arr[i],Math.min(p1*arr[i],p2*arr[i]));
+        p1= temp;
+            res=Math.max(res,p1);
             
         }
         
