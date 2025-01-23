@@ -47,12 +47,25 @@ class Main {
 **********************************************************************************************************************************************
 
 
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int [] arr={1,2,3,0,-4,5,0};
+        int n=arr.length;
+        int p1=arr[0],p2=arr[0],res=arr[0];
+        for(int i=1;i<n;i++){
+         p1=Math.max(arr[i],Math.max(p1*arr[i],p2*arr[i]));
+            
+        }
+        
+     System.out.println(res);
+    }
+}
 
 
 
 
 
-2 optimal solutions yet to be submitted
 
 
     
