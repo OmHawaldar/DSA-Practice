@@ -11,6 +11,23 @@ class Solution {
             //moving 2 pointers:
             int j = i + 1;
             int k = n - 1;
+
+               while (j < k) {
+                int sum = arr[i] + arr[j] + arr[k];
+                if (sum < 0) {
+                    j++;
+                } else if (sum > 0) {
+                    k--;
+                } else {
+                    List<Integer> temp = Arrays.asList(arr[i], arr[j], arr[k]);
+                    ans.add(temp);
+                    j++;
+                    k--;
+                    //skip the duplicates:
+                  
+                }
+            }
+        }
          
 
         return ans;
