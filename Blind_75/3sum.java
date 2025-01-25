@@ -13,9 +13,9 @@ class Solution {
             int k = n - 1;
 
                while (j < k) {
-                int sum = arr[i] + arr[j] + arr[k];
-                if (sum < 0) {
-                    j++;
+                int sum = arr[i] + arr[j] + arr[k];                 ***********************
+                if (sum < 0) {                                        NEEDS TO BE UNDERSTOOD
+                    j++;                                            **************************
                 } else if (sum > 0) {
                     k--;
                 } else {
